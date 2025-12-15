@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book &amp; Contact — Urban Paws Grooming NYC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="logo">Urban Paws Grooming</div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html" aria-current="page">Book &amp; Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false">
+        Toggle theme
+      </button>
+    </header>
+
+    <main id="main-content">
+      <header class="page-header">
+        <h1>Book an appointment</h1>
+        <p>
+          Use this page to request an appointment or ask questions about
+          grooming. In a real business, messages would be answered by the
+          studio. Here, the form is a demo used to show front-end skills.
+        </p>
+      </header>
+
+      <section class="grid-two-column about-section" aria-label="Booking and contact">
+        <div>
+          <h2>How a visit works</h2>
+          <p>
+            We schedule appointments in blocks so that each dog has time
+            to settle in. Owners can share special instructions, and we
+            send a message when grooming is done.
+          </p>
+          <p>
+            The short video below introduces the studio idea. The file is
+            saved as a web-formatted MP4 and kept under 10 MB so it loads
+            smoothly on slower connections.
+          </p>
+
+          <video
+            controls
+            width="540"
+            height="362"
+            poster="images/video-poster-1x.jpg"
+          >
+            <source src="media/studio-intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div>
+          <h2>Request a visit</h2>
+          <p>
+            Fill in the form with a preferred time range and a short
+            description of your dog. This demo script will not send
+            real email, but it will show a confirmation message.
+          </p>
+
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="dog-name">Dog's name</label>
+            <input id="dog-name" name="dog-name" type="text" required>
+
+            <label for="message">Details &amp; preferred times</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send request</button>
+          </form>
+
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+
+          <ul class="contact-links">
+            <li>Email: <a href="mailto:hello@urbanpaws-nyc.com">hello@urbanpaws-nyc.com</a></li>
+            <li>Instagram: <a href="https://www.instagram.com" target="_blank" rel="noopener">Urban Paws NYC (demo)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <a href="#top" class="back-to-top">Back to top</a>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Urban Paws Grooming · New York City</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
